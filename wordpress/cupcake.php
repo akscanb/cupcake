@@ -38,7 +38,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 function cupcake() {
     $chosen = cupcake_quote();
-	echo '<div id="cupcake"><iframe src="//crypto.stanford.edu/flashproxy/embed.html" width="80" height="15" frameborder="0" scrolling="no"></iframe>
+    echo '<div id="cupcake"><iframe src="//crypto.stanford.edu/flashproxy/embed.html" width="80" height="15" frameborder="0" scrolling="no"></iframe>
     <a href="https://crypto.stanford.edu/flashproxy/">[info]</a>
     <a href="https://crypto.stanford.edu/flashproxy/options.html">[options]</a></div>';
 }
@@ -48,21 +48,21 @@ add_action( 'wp_footer', 'cupcake' );
 
 // We need some CSS to position errythang
 function cupcake_css() {
-	// This makes sure that the positioning is also good for right-to-left languages
-	$x = is_rtl() ? 'left' : 'right';
+    // This makes sure that the positioning is also good for right-to-left languages
+    $x = is_rtl() ? 'left' : 'right';
 
-	echo "
-	<style type='text/css'>
-	#cupcake {
-		float: $x;
-		padding-$x: 15px;
-		padding-top: 5px;		
-		margin: 0;
-		font-size: 13px;
+    echo "
+    <style type='text/css'>
+    #cupcake {
+        float: $x;
+        padding-$x: 15px;
+        padding-top: 5px;
+        margin: 0;
+        font-size: 13px;
         min-width:200px}
-	}
-	</style>
-	";
+    }
+    </style>
+    ";
 }
 
 add_action( 'wp_footer', 'cupcake_css' );

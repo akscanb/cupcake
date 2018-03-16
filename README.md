@@ -2,16 +2,26 @@ Cupcake Bridge
 ===========
 
 Cupcake Bridge helps users makes bridges automagically!
-Get the Cupcake browser extension for [Chrome](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) (v22+) and Firefox (v3+, coming soon)
+Get the Cupcake browser extension for [Chrome](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) and [Firefox](https://addons.mozilla.org/en-us/firefox/addon/cupcakebridge/)
 
-**Contact**: Griffin Boyce, griffin @ cryptolab.net 
+##Releases
+* Chrome - [download on google](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc)
+* Firefox - [download from Mozilla](https://addons.mozilla.org/en-us/firefox/addon/cupcakebridge/) (Special thanks to [Uzair Farooq](uzairfarooq11@gmail.com) for creating the original Firefox port of Cupcake.
+* Opera 26 (works on v15+)
+* Wordpress
+* Facebook App (html5/css3/javascript)
+* Flex shim
+* Drupal 7+ module
+
+## Security
+In 2015, a full security audit of both Cupcake and Flashproxy was conducted by Cure53.  Both projects passed the audit with compliments.  The full report is [available here](https://github.com/glamrock/cupcake/blob/master/security/audit1.pdf).
 
 ##What even is Cupcake?
-Cupcake uses something called Flashproxy to create special Tor bridges that are harder to block. As with all circumvention projects, there's a *lot* more to it than that, but that is the jist. Flashproxy was created by David Fifield, and there is a lot of ongoing research in this area.  You can learn more at the <a href="http://crypto.stanford.edu/flashproxy">Stanford Flashproxy site</a>.  Cupcake exists as an easy way to distribute Flashproxy, with the goal of getting as many people to become bridges as possible.
+Cupcake uses something called Flashproxy to create special Tor pathways that are harder to block. As with all circumvention projects, there's a *lot* more to it than that, but that is the jist. Flashproxy was created by David Fifield, and there is a lot of ongoing research in this area.  You can learn more at the <a href="http://crypto.stanford.edu/flashproxy">Stanford Flashproxy site</a>.  Cupcake exists as an easy way to distribute Flashproxy, with the goal of getting as many people to become bridges as possible.
 
 Cupcake can be distributed in two ways:
- * As a module/theme/app on popular web platforms (turning every visitor to your site in to a temporary proxy)
- * As a chrome extension (turning your computer in to a less temporary proxy)
+* As a chrome or firefox add-on (turning your computer in to a less temporary proxy)
+* As a module/theme/app on popular web platforms (turning every visitor to your site in to a temporary proxy)
 
 ##What the frak is a Flashproxy?
 There is this thing called a Flash Proxy[[1](https://crypto.stanford.edu/flashproxy/)] - basically a code snippet that you run on sites and visitors become tor bridges temporarily.
@@ -30,44 +40,24 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 ##Oh. Well okay then. Carry on.
 [I knew you'd come around!](https://www.youtube.com/watch?v=HrlSkcHQnwI)
 
-##Complete
-* Chrome - [download on google](https://chrome.google.com/webstore/detail/cupcake/dajjbehmbnbppjkcnpdkaniapgdppdnc) or [github](https://github.com/glamrock/cupcake/blob/master/downloads/chrome.crx)
-* Wordpress
-* Facebook App (html5/css3/javascript)
-* Flex shim
+##How to help
+The easiest way to help the project is by installing one of the browser extensions.  It's not resource intensive at *all* -- flashproxy uses about as much bandwidth in a day as a 5-minute YouTube video (around 6mb).
 
-##Beta
-* Drupal 6 module
-* Flex shim for Flash games
-
-##Next
-* Better UX for Wordpress and Drupal plugins
 * Translation - [Help Out!](https://www.transifex.com/projects/p/cupcake/)
-* Firefox add-on
-* Metrics (with the idea of pushing this functionality upstream to Flashproxy.js)
-
-##Roadmap
-* Wordpress Theme
-* Tumblr Theme (#2)
-* Drupal 7 & 5 modules
-* Safari
-* Flash/SWF App Shim (actionscript & html)
 
 ##High-priority tasks that are difficult to fix
 * Enabling wordpress.COM users to add flashproxy to their theme. (Can you help with this? Send me an email! griffin @ cryptolab.net )
 
 ##Low-priority tasks that demand a lot of time
-* Opera 12 extension
-* RefineryCMS add-on
-* Opera 15 add-on
 * Joomla Extension
+* Flash/SWF App Shim (actionscript & html)
 
 ##Failed experiments
 * /img-embed
 
 ##Surprisingly-sucessful experiments
 * Tumblr post demo [post](http://newhopegriffin.tumblr.com/post/47018950850/le-demo)
-* Tumblr theme demo (new link coming soon)
+* Tumblr theme demo
 * Facebook App (html5/css3/javascript)
 
 ##Code notes
@@ -77,10 +67,11 @@ addresses."* [[2](https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
 - *permissions:background* is used so that the extension will notify of updates and display the post-installation page. Also used so that Cupcake will start/run on startup, before the browser is started (Windows only).
 - *permissions:cookies* allows reading/writing of cookies, but may not be necessary, since Cupcake doesn't currently use the Cookies API.  
 
-### License
-My software is free to use, free to give to friends, & open-source, so everyone can make sure it's safe for people to use. Want to make changes? Go for it! :dog:
+### Financials
+Much of the Cupcake Bridge projects are self-funded by @glamrock, but the Chrome and Firefox extensions were covered under a generous grant from the [Open Tech Fund](https://www.opentech.fund/project/cupcake-bridge) from 2013-2014.
 
-Cupcake uses the Revised BSD license -- see license.txt for more info.
+### License
+My software is free to use, free to give to friends, & open-source, so everyone can make sure it's safe for people to use. Want to make changes? Go for it! :dog: Cupcake uses the Revised BSD license -- see license.txt for more legal info.
 
 ### Cute dog
 ![dawww, lookit dat little tongue so cute](http://i.imgur.com/JYO9P6j.jpg)
@@ -88,3 +79,4 @@ Cupcake uses the Revised BSD license -- see license.txt for more info.
 ### References
 [1] https://crypto.stanford.edu/flashproxy/  
 [2] https://gitweb.torproject.org/flashproxy.git/blob/HEAD:/README
+[3] https://gitweb.torproject.org/flashproxy.git/tree/proxy
